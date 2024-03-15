@@ -33,6 +33,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   webview_flutter: ^4.0.0
   onesignal_flutter: ^5.0.4
+  firebase_messaging:
+  firebase_core:
+  firebase_auth:
+  flutter_local_notifications: ^16.3.0
 
 dev_dependencies:
   flutter_test:
