@@ -11,7 +11,7 @@
 
 - Change package name in  ```android/app/build.gradle```
 
-```json
+```gradle
 defaultConfig {
     applicationId "com.miracle.webmobile"
     ...
@@ -20,7 +20,7 @@ defaultConfig {
 
 - Replace with your package name
 
-```json
+```gradle
 defaultConfig {
     applicationId "your.package.name"
     ...
