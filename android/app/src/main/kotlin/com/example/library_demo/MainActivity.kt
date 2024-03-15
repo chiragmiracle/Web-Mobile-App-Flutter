@@ -1,4 +1,4 @@
-package com.example.library_demo
+package com.miracle.webmobile
 
 import io.flutter.embedding.android.FlutterActivity
 

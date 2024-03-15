@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "789009951706",
+    "project_id": "miraclewebmobile-26661",
+    "storage_bucket": "miraclewebmobile-26661.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789009951706:android:cec8ae223b6d58ea99eee3",
+        "android_client_info": {
+          "package_name": "com.miracle.webmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRpn_Hz1sG3O_E5getLn-OQ9eUpibaHxk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
