@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import 'src/navigation_controls.dart';
 import 'src/web_view_stack.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
-
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(useMaterial3: true),
       home: WebViewApp(),
     );
@@ -31,8 +31,8 @@ class WebViewApp extends StatefulWidget {
 
 class _WebViewAppState extends State<WebViewApp> {
   late final WebViewController controller;
-  String App_URL = "https://www.theandroid-mania.com/";
-  String ONESIGNAL_ID = "a7b377c7-e507-4c13-88f6-71cdb6152f66";
+  String MAIN_URL = "https://www.theandroid-mania.com/";
+  String ONESIGNAL_ID = "########-####-####-####-############";
 
   Future<bool> _onWillPop() async {
     return (await showDialog(
@@ -58,13 +58,14 @@ class _WebViewAppState extends State<WebViewApp> {
   @override
   void initState() {
     super.initState();
+
     OneSignal.Debug.setLogLevel(OSLogLevel.verbose);
     OneSignal.initialize(ONESIGNAL_ID);
     OneSignal.Notifications.requestPermission(true);
 
     controller = WebViewController()
       ..loadRequest(
-        Uri.parse(App_URL),
+        Uri.parse(MAIN_URL),
       );
   }
 
