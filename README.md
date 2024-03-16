@@ -31,7 +31,7 @@ defaultConfig {
 - Replace logo **logo.png** in ```android/app/src/main/res/drawable/``` directory
 
 ## Website URL
-- Change url variable in ```android/app/src/main/java/com/miracle/webmobile/MainActivity.kt```
+- Change url variable in ```lib/main.dart```
 ```dart
 String MAIN_URL = "https://www.theandroid-mania.com/";
 ```

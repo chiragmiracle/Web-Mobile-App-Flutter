@@ -110,7 +110,6 @@ class _WebViewAppState extends State<WebViewApp> {
   }
 
   void registerNotification() async {
-
     await _messaging.requestPermission(
       alert: true,
       badge: true,
@@ -172,8 +171,8 @@ class _WebViewAppState extends State<WebViewApp> {
           presentSound: true,
         ),
         android: AndroidNotificationDetails(
-          "chetak_channel",
-          "Default Chetak Channel",
+          "your_channel",
+          "Default Channel",
           importance: Importance.high,
           priority: Priority.high,
           icon: '@mipmap/ic_launcher',
