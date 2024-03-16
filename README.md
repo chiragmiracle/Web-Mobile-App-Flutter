@@ -3,7 +3,7 @@
 ## This is MiracleWebView application with Advance functionalities
 
 # Screenshots
-![ANDROID WEBVIEW](https://imgur.com/5Ngr8E7.jpeg)
+![ANDROID WEBVIEW](https://imgur.com/tL16qbQ.jpeg)
 
 # Configurations
 

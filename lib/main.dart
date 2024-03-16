@@ -54,8 +54,8 @@ class WebViewApp extends StatefulWidget {
 class _WebViewAppState extends State<WebViewApp> {
   final FirebaseMessaging _messaging = FirebaseMessaging.instance;
   late final WebViewController controller;
-  String notificationToken ="";
-  String MAIN_URL = "https://www.theandroid-mania.com/";
+  String notificationToken = "";
+  String MAIN_URL = "https://www.google.com/";
   String ONESIGNAL_ID = "########-####-####-####-############";
 
   Future<bool> _onWillPop() async {
@@ -184,5 +184,4 @@ class _WebViewAppState extends State<WebViewApp> {
 
     print("message.data ${message.data}");
   }
-
 }
